@@ -1,0 +1,318 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	
+}
+
+section {
+    margin-bottom: 1%;
+}
+
+.test {
+    height: 400px;
+}
+.row {
+    
+    max-width: 1200px;
+	margin: 0 auto;
+    
+}
+
+.row {
+    max-width: 1200px;
+}
+nav {
+    margin-top: -1%;
+    height: 11%;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.2px solid #ddd;
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.logo {
+    float: left;
+    height: 105px;
+    margin-top: -0.1%;
+}
+header ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 1.7%
+        
+}
+
+header li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+header li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #555;
+    background: #fff;
+    text-decoration: none;
+}
+
+header li:hover a {
+    background: #ED4C5F;
+    color: #fff;
+}
+
+header li:hover ul a {
+    background: #f3f3f3;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+
+header li:hover ul a:hover {
+    background: #ED4C5F;
+    color: #fff;
+}
+
+header li ul {
+    display: none;
+}
+
+header li ul li {
+    display: inline-block;
+    float: none;
+}
+
+header li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+header ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+	
+}
+
+.show-menu {
+    text-decoration: none;
+    color: #fff;
+    background: #ED4C5F;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    z-index: 2;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    width: 1200px;
+	top: 30%;
+	left: 11%;
+    display: block;
+}
+
+h2 {
+	font-size: 1.8em;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 15px;
+	letter-spacing: 1px; 
+}
+
+.hero-text h1 {
+    color: #ededed;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    word-spacing: 4px;
+	letter-spacing: 1px;
+}
+
+.text {
+    line-height: 1.5;
+	width: 90%;
+	margin-left: 5%; 
+	margin-right: 5%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.btn:link, 
+.btn:visited {
+    margin-top: 20%;
+    float: right;
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: inherit;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 0px 0px 0px 0px;
+	border: 2px solid #ED4C5F;
+	
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #ED4C5F;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ED4C5F; 
+    border-radius: 10px 10px 10px 10px;
+    transition: all .3s ease-in;
+}
+
+
+.btn-full:hover,
+.btn-full:active { border: 2px solid #ED4C5F; }
+
+.cene {
+    width: 120%;
+    margin-left: -5%
+}
+.cenovnik h2 {
+    margin-top: 4%;
+}
+
+.cene h3 {
+    color: #ED4C5F;
+    text-align: center;
+}
+.cene h4 {
+    text-align: center;
+}
+.ter {
+    float: left;
+    width: 30%;
+    margin-bottom: 6%;
+    margin-right: 1%;
+    border: 2px solid #ED4C5F;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+
+
+.slike {
+    margin-left: 1%;
+    margin-bottom: 6%;
+}
+
+.onama {
+    margin-bottom: 6%;
+}
+
+form {
+    width: 80%;
+    top: 0;
+    region-fragment: 0;
+    height: 300px;
+    margin-left: 30%;
+    margin-bottom: 6%;
+}
+
+input {
+    width: 55%;
+    height: 30px;
+    
+}
+
+textarea {
+    width: 55%;
+    height: 100px;
+}
+
+button {
+    margin-left: 21%;
+    display: inline-block;
+	padding: 10px 30px;
+	font-size: inherit;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 0px 0px 0px 0px;
+	border: 2px solid #ED4C5F;
+    background-color: #ED4C5F;
+	color: #fff;
+}
+
+.kontakt {
+    margin-bottom: 6%;
+}
+
+footer {
+    height: 100px;
+    background-color: #ED4C5F;
+    color: #fff;
+}
+
+.footer-nav {
+    margin-top: 2%;
+    list-style: none;
+    float: left;
+}
+
+.social-icons {
+    margin-top: 2%;
+    list-style: none;
+    float: right;
+}
+.footer-nav li, 
+.social-icons li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+	text-decoration: none;
+	border: 0;
+	color: #fff;
+	transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+	color: #555;
+}
+.social-icons li a:link,
+.social-icons li a:visited {
+	font-size: 35px;
+	size:5px;
+}
+
+
